@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+<!--nav-->
+    <header>
+        <div class="navbar bg-red-100  lg:px-10 ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a></a></li>
+                  <li tabindex="0">
+                    <a class="justify-between">
+                   MENU
+                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                    </a>
+                    <ul class="p-2">
+                      <li><a>    MENU -1</a></li>
+                      <li><a>   MENU -2</a></li>
+                    </ul>
+                  </li>
+                  <li><a></a></li>
+                </ul>
+              </div>
+
+
+              <P class=" text-2xl  block ">Interactive </P>
+         
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a></a></li>
+                <li tabindex="0">
+                  <a>
+                    MENU 
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                  </a>
+                  <ul class="p-2">
+                    <li><a>MENU -1</a></li>
+                    <li><a>MENU -2</a></li>
+                  </ul>
+
+                </li>
+                <li><a></a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn" id="Get-started">Get started</a>
+            </div>
+          </div>
+        
+    </header>
+
+
+
+<!--nav close-->
+
+
+
+
+<!--card-->
+<main>
+
+
+
+
+    <section class=" gap-5 lg:gap-5  mt-7  lg:px-8 flex flex-col md:flex-row lg:flex-row ">
+
+<div  class="w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!--card-1 -->
+
+
+
+
+    <div  id="random"  class="card w-full  bg-red-100 shadow-xl hover:bg-violet-500 " >
+        <figure class="px-10 pt-10">
+ 
+          <img src="images/triangle.png" alt="triangle" class="rounded-xl" />
+        </figure>
+        <div class="card-body  items-center text-center">
+
+
+          <h2 class="card-title"  id="Triangle"> Triangle</h2>
+          <p> Area(A) = 0.5×b×h</p>
+
+
+<input   type="text" id="first-inputb"  placeholder="b"class="input input-bordered input-sm w-full max-w-xs  "/>cm
+<input type="text"placeholder="h" id="first-inputh"class="input input-bordered input-sm w-full max-w-xs"/>cm
+          <div class="card-actions">
+            <button class="btn btn-primary"  id="first-card"> Calculate</button>
+          </div>
+        </div>
+    </div>
+
+
+
+   
+
+
+
+   <!--card-2 -->
+
+    <div class="card w-full  bg-red-100 shadow-xl hover:bg-yellow-500   ">
+        <figure class="px-10 pt-10">
+          <img src="images/rectangle.png" alt="triangle" class="rounded-xl" />
+        </figure>
+        <div class="card-body  items-center text-center">
+<br>
+
+          <h2 class="card-title" id=" Rectangle"> Rectangle</h2>
+          <p> Area(A) = w×l</p>
+        
+
+
+<input type="text" id="s-inputw"placeholder="w"class="input input-bordered input-sm w-full max-w-xs  "/>cm
+
+ <input  type="text"placeholder="l"id="s-inputl"class="input input-bordered input-sm w-full max-w-xs">cm
+
+          <div class="card-actions">
+            <button class="btn btn-primary" id="sec-card" > Calculate</button>
+          </div>
+        </div>
+    </div>
+
+
+  <!--card-3 -->
+  <div class="card w-full  bg-red-100 shadow-xl hover:bg-violet-500   ">
+    <figure class="px-10 pt-10">
+      <img src="images/parallelogram.png" alt="triangle" class="rounded-xl" />
+    </figure>
+    <div class="card-body  items-center text-center">
+<br>
+
+      <h2 class="card-title" id="Parallelogram">Parallelogram</h2>
+      <p> Area(A) = b × h</p>
+    
+
+
+<input type="text" id="T-inputb"placeholder="b"class="input input-bordered input-sm w-full max-w-xs  "/>cm
+
+<input  type="text"placeholder="h"id="T-inputh"class="input input-bordered input-sm w-full max-w-xs">cm
+
+      <div class="card-actions">
+        <button class="btn btn-primary" id="third-card"> Calculate</button>
+      </div>
+    </div>
+</div>
+
+
+
+
+  <!--card-4 -->
+
+  <div class="card w-full  bg-red-100 shadow-xl  hover:bg-yellow-500  ">
+    <figure class="px-10 pt-10">
+      <img src="images/rhombus.png "alt="triangle" class="rounded-xl" />
+    </figure>
+    <div class="card-body  items-center text-center">
+
+      <h2 class="card-title" id="Rhombus"> Rhombus</h2>
+      <p> Area(A) = 0.5×d1×d2</p>
+    
+
+
+<input type="text" id="F-inputda"placeholder="d1"class="input input-bordered input-sm w-full max-w-xs  "/>cm
+
+<input  type="text"placeholder="d2"id="F-inputldb"class="input input-bordered input-sm w-full max-w-xs">cm
+
+      <div class="card-actions">
+        <button class="btn btn-primary" id="four"> Calculate</button>
+      </div>
+    </div>
+</div>
+
+
+
+ <!--card-5 -->
+
+ <div class="card w-full  bg-red-100 shadow-xl hover:bg-violet-500   ">
+    <figure class="px-10 pt-10">
+      <img src="images/pentagon.png "alt="triangle" class="rounded-xl" />
+    </figure>
+    <div class="card-body  items-center text-center">
+
+      <h2 class="card-title" id="pentagon">pentagon</h2>
+      <p> Area(A) = 0.5×p×b</p>
+    
+
+
+<input type="text" id="Five-inputp" placeholder="p"class="input input-bordered input-sm w-full max-w-xs  "/>cm
+
+<input  type="text"placeholder="b" id="Five-inputb"class="input input-bordered input-sm w-full max-w-xs">cm
+
+      <div class="card-actions">
+        <button class="btn btn-primary" id="five"> Calculate</button>
+      </div>
+    </div>
+</div>
+
+
+ <!--card-6 -->
+
+ <div class="card w-full  bg-red-100 shadow-xl  hover:bg-yellow-500   ">
+    <figure class="px-10 pt-10">
+      <img src="images/ellipse.png "alt="triangle" class="rounded-xl" />
+    </figure>
+    <br>
+    <div class="card-body  items-center text-center">
+
+      <h2 class="card-title" id="Ellipse">Ellipse</h2>
+      <p> Area(A) = πab</p>
+    
+
+
+<input type="text" id="six-inputa" placeholder="a"class="input input-bordered input-sm w-full max-w-xs  "/>cm
+
+<input  type="text"placeholder="b" id="six-inputb" class="input input-bordered input-sm w-full max-w-xs">cm
+
+      <div class="card-actions">
+        <button class="btn btn-primary" id="Six-card"> Calculate</button>
+      </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+
+ <!--card for counting-->
+
+
+<div class="w-full mt-6 md:w-[40%] lg:w-[42%] mx-auto">
+    <div class="card w-full  bg-red-400 shadow-xl">  
+<h1 class="text-3xl text-center font-bold underline mt-5"  > Area Calculation -<span id="total-product">0</span></h1>
+            <div class="overflow-x-auto">
+              <table class="table w-full">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                 
+                    <th>Total</th>
+                    <th>Unit</th>
+                  </tr>
+                </thead>
+                <tbody id="table-container">
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+  
+
+
+    </section>
+</main>
+<!--card close-->
+
+
+
+    <script src="js/first.js"></script>
+</body>
+</html>
